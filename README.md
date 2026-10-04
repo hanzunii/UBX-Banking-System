@@ -1,9 +1,24 @@
-# ATM Mobile Payment System (Production-Ready Demo)
+# UBX-Banking-System
 
-A modern, hardened mobile payment system:
-- **Backend**: Spring Boot 3 + Spring Security (JWT) + H2 embedded database (zero-setup)
-- **Android app**: Login, registration, deposit, withdraw, transfer, transaction history
-- **Security**: bcrypt PIN hashing, JWT sessions, login rate-limiting/lockout, input validation, atomic transfers
+A distributed banking system built on Java RMI, with a web app and Android app
+for the user role and a desktop console for system admins.
+
+| Component | Stack | Role |
+|-----------|-------|------|
+| `rmi-server` | Spring Boot 3, JPA, H2 | RMI core server - all business logic |
+| `api-gateway` | Spring Boot 3, WebSocket | REST/WebSocket front, resolves RMI stubs |
+| `atm-android` | Java, Material 3 | Android app for users (UBX Mobile) |
+| `web-app` | React 18, Vite, Tailwind | Web app for users |
+| `admin-desktop` | Java Swing | System admin console |
+| `atm-server` | Spring Boot 3 | Legacy v1 single-module server, superseded |
+
+Features: bcrypt PIN hashing, JWT sessions, login rate limiting and lockout,
+input validation, atomic transfers with idempotency keys, live balance push
+over WebSocket.
+
+**Quick start:** `./start-server.sh` - no IP configuration required, the app
+discovers the gateway automatically (see [Server address: zero
+configuration](#3-server-address-zero-configuration)).
 
 ---
 
