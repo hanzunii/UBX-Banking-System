@@ -1,7 +1,7 @@
 # UBX-Banking-System
 
-A distributed banking system built on Java RMI, with a web app and Android app
-for the user role and a desktop console for system admins.
+A Distributed System using RMI, Build Web and Android App for User role and
+Desktop App for System Admins.
 
 | Component | Stack | Role |
 |-----------|-------|------|
