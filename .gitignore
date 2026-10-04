@@ -1,1 +1,55 @@
-/.metadata/
+# ── Build output ────────────────────────────────────────────────────────────
+build/
+out/
+dist/
+target/
+*.class
+
+# ── Gradle ──────────────────────────────────────────────────────────────────
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# ── Node ────────────────────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.vite/
+
+# ── Android ─────────────────────────────────────────────────────────────────
+# Machine-specific SDK path - every developer generates their own.
+local.properties
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ── IDE / Eclipse / VS Code ─────────────────────────────────────────────────
+.metadata/
+bin/
+.idea/
+*.classpath
+*.project
+.settings/
+.vscode/
+
+# ── Runtime logs ────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── H2 database (contains account + transaction data; regenerated on boot) ──
+# Matches data/ in every module, not just the repo root.
+**/data/*.db
+
+# ── Release APKs ────────────────────────────────────────────────────────────
+# Only the current build is tracked. Superseded builds stay on disk only, so
+# history does not accumulate 6 MB binaries per release.
+/atm-mobile-v1.0.apk
+/atm-mobile-v1.0-release.apk
+/atm-mobile-v1.1-debug.apk
+/ubx-mobile-v1.2-debug.apk
+/ubx-mobile-v1.3-debug.apk
+
+# ── OS ──────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#8B5CF6</color>
+    <color name="primary_dark">#6D28D9</color>
+    <color name="primary_variant">#7C3AED</color>
+    <color name="gradient_start">#6D28D9</color>
+    <color name="gradient_end">#8B5CF6</color>
+    <color name="accent">#A78BFA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light">#F5F3FF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="gray">#64748B</color>
+    <color name="muted">#94A3B8</color>
+    <color name="success">#16A34A</color>
+    <color name="success_soft">#DCFCE7</color>
+    <color name="error">#DC2626</color>
+    <color name="error_soft">#FEE2E2</color>
+    <color name="text">#1E1B4B</color>
+    <color name="primary_soft">#EDE9FE</color>
+    <color name="accent_soft">#EDE9FE</color>
+</resources>

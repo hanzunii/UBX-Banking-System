@@ -1,0 +1,4 @@
+PluginManager.with {
+    // no global plugin needed
+}
+rootProject.name = 'api-gateway'
